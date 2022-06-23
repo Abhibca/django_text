@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Template working</title>
+</head>
+
+<body>
+    
+    <h1>First Web site in Django</h1>
+    <form action='/about' method='get'>
+        
+        {%csrf_token%}
+        <textarea name='text' style='margin:0px,height:100px,width:100px'></textarea>
+
+
+    <br />
+        <input type="checkbox" name='removepunch' />Remove Punctuation</input><br>
+        <input type="checkbox" name='capitalizefirst' />UPPARCASE</input><br>
+        <input type="checkbox" name='newlineremover' />New Line Remover</input><br>
+        <input type="checkbox" name='spaceremover' />Space Remover</input><br>
+        <input type="checkbox" name='charcount' />Character Count</input><br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+
+</html>
